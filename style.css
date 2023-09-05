@@ -1,0 +1,36 @@
+.header {
+    display: flex;
+    padding: 20px 20px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    height: 100vh;
+}
+
+.content {
+    flex: 1;
+    background-color: rgb(178, 176, 176);
+    display: flex;
+    padding: 100px;
+}
+
+.dummy-div {
+    flex: 2;
+    min-width: 20px;
+}
+
+#div-container {
+    flex: 3;
+    aspect-ratio: 1;
+    display: grid;
+    background-color: azure;
+
+}
+
+
+.divFromGrid {
+    background-color: white;
+}
