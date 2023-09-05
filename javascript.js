@@ -25,7 +25,7 @@ function createDivs(numberOfRows) {
         const div = document.createElement('div');
         div.className = "divFromGrid"
 
-        div.addEventListener("mouseover", (event) => {
+        div.addEventListener("mouseover", () => {
             div.style.backgroundColor = generateRGBValue()
         });
 
@@ -41,12 +41,17 @@ function deleteDivs() {
 }
 
 const squareNumberForm = document.querySelector("#square-number")
-squareNumberForm.addEventListener("keypress", function (event) {
-    if (event.key === "Enter") {
-        if (squareNumberForm.value < 100 && squareNumberForm.value > 0) {
-            deleteDivs()
-            createDivs(squareNumberForm.value)
-        }
+const changeSquareNumberButton = document.querySelector("#changeSquareNumber")
+const warningTextDiv = document.querySelector("#warningText")
+
+changeSquareNumberButton.addEventListener("click", () => {
+    if (squareNumberForm.value < 100 && squareNumberForm.value > 0) {
+        warningTextDiv.textContent = ""
+        deleteDivs()
+        createDivs(squareNumberForm.value)
+    }
+    else {
+        warningTextDiv.textContent = "Please, input a number between 1 and 99"
     }
 })
 

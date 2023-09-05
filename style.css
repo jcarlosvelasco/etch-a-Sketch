@@ -1,36 +1,61 @@
-.header {
-    display: flex;
-    padding: 20px 20px;
-}
-
 body {
     display: flex;
     flex-direction: column;
     margin: 0px;
     height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header {
+    display: flex;
+    padding: 20px 20px;
+    background-color: rgb(189, 189, 189);
+    margin: 0px;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    padding-right: 20px;
+    margin-right: auto;
 }
 
 .content {
+    background-color: rgb(255, 255, 255);
     flex: 1;
-    background-color: rgb(178, 176, 176);
     display: flex;
-    padding: 100px;
+    align-items: center;
+    justify-content: center;
 }
 
-.dummy-div {
-    flex: 2;
-    min-width: 20px;
+.footer {
+    height: 50px;
+    background-color: rgb(189, 189, 189);
+    display: flex;
+    align-items: center;
+    padding: 0px 30px;
+    justify-content: center;
+}
+
+#square-number {
+    margin-left: 8px;
+    margin-right: 20px;
+    width: 30px;
 }
 
 #div-container {
-    flex: 3;
-    aspect-ratio: 1;
+    width: 500px;
+    height: 500px;
     display: grid;
+    row-gap: 1px;
+    column-gap: 1px;
     background-color: azure;
-
 }
 
-
 .divFromGrid {
-    background-color: white;
+    background-color: rgb(205, 205, 205);
+}
+
+#warningText {
+    margin-left: 20px;
 }

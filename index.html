@@ -10,18 +10,22 @@
 
 <body>
     <div class="header">
-        <button id="changeSquareNumber">Change square number</button>
-        <input type="text" id="square-number">
+        <div class="title">Etch A Sketch</div>
+        <div class="tweaks">
+            Change number of rows:
+            <input type="text" id="square-number">
+            <button id="changeSquareNumber">Submit</button>
+            <div id="warningText"></div>
+        </div>
     </div>
 
     <div class="content">
-        <div class="dummy-div"></div>
-        <div id="div-container">
-
-        </div>
-        <div class="dummy-div"></div>
+        <div id="div-container"></div>
     </div>
 
+    <div class="footer">
+        Check the project: https://github.com/jcarlosvelasco/etch-a-Sketch
+    </div>
 
     <script src="javascript.js"></script>
 </body>
