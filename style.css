@@ -12,12 +12,18 @@ body {
     background-color: rgb(189, 189, 189);
     margin: 0px;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .title {
-    padding-right: 20px;
-    margin-right: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.tweaks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .content {
@@ -26,6 +32,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 20px;
 }
 
 .footer {
@@ -58,4 +65,13 @@ body {
 
 #warningText {
     margin-left: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+button {
+    height: fit-content;
 }
